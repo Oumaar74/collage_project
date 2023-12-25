@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Book</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f6f6f6;
+            color: #333;
+            margin: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: black;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .topnav a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 14px 16px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            align-items: flex-start;
+            min-height: calc(100vh - 150px);
+        }
+
+        .recipe {
+            flex: 0 0 30%; 
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+        }
+
+        .recipe img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+#thrid-img{
+    height: 400px;
+}
+        .recipe-content {
+            padding: 15px;
+        }
+
+        .recipe h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .recipe p {
+            margin-bottom: 15px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+        }
+
+        .form-container input[type=text], 
+        .form-container input[type=password],
+        .form-container input[type=email] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dark-mode-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+    </header>
+
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Recipe Book!</h2>
+            <p>Welcome to our collection of delicious recipes: Read reviews,<br> compare customer ratings, see screenshots and learn more about cookpad <br> 
+            Find & share recipes, Find & share recipes and enjoy</p>
+        
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our passion for cooking...</p>
+            
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or feedback...</p>
+        
+        </section>
+
+        <section id="pasta" class="recipe">
+             <img src="image 1.jpeg" alt="pasta bechamel">
+             <img src="img.jpeg" alt="pasta">
+             <img src="image 2 .jpeg" alt="pasta2" id="thrid-img">
+            <div class="recipe-content">
+                <h2>Pasta Recipes</h2>
+                <p>Here is the description and steps for making pasta...</p>
+            the component:
+            <br>
+            (1): 2 packets spaghtti pasta
+            <br>
+            (2): 2 clovesGarlic, minced
+            <br>
+            (3): 4 tbsptomato sauce
+            <br>
+            (4): 2 tablespoonsoil
+            <br>
+            (5): Salt to taste
+            <br>
+            (6): Spices as desired
+            <br>
+            (7): 2 litresWater, to boil the pasta
+            <hr>
+            the steps:
+            <br>
+            step 1: In a pot on the stove, boil the pasta in water for 10 minutes, then drain.
+            <br>
+            step 2: Put the oil in a pot, then add the tomato sauce, chopped garlic, and leave the pot on the heat for 3 minutes.
+            <br>
+            step 3: Add the spices to the pot, stir the mixture, and leave it on the fire for a quarter of an hour.
+            <br>
+            step 4: Place the pasta in the sauce pot, stir, then leave for a while.
+            <br>        
+            step 5: Remove the pot from the heat, pour the pasta with the sauce into a plate and serve hot.
+            </div>
+        </section>
+
+        <section id="pizza" class="recipe">
+            <img src="img3.jpeg" alt="pizza">
+            <img src="img 4 .jpeg" alt="pizza2">
+            <div class="recipe-content">
+                <h2>Pizza Recipes</h2>
+                <p>Here is the description and steps for making pizza...</p>
+                pizza is one of the most delicious international foods. It is easy to prepare and prepare, and all family members will love it, especially children who love to eat pizza from time to time with the filling they prefer.
+                 Pizza is one of the famous European dishes, which is characterized by being easy and simple to prepare and does not take a lot of time or effort. We will tell you how to make quick pizza dough .
+                  It is a dough that will not take much of your time to prepare or ferment, and you will be happy with the result
+            </div>
+        </section>
+
+        <section id="cake" class="recipe">
+            <img src="img 5.jpeg" alt="Cake">
+            <img src="img 6.jpeg" alt="Cake">
+            <div class="recipe-content">
+                <h2>Cake Recipes</h2>
+                <p>Here is the description and steps for making cake...</p>
+                the component :
+                <br>
+                4egg
+                <br>
+                2 cupsflour
+                <br>
+                1 1/2 cupsugar
+                <br>
+                1 cupLiquid milk
+                <br>
+                3/4 cupoil
+                <br>
+                2 tablespoonsBaking powder
+                <br>
+                Grated lemon peel as desired
+                <br>
+                Vanilla as desired
+                <hr>
+                the steps :
+                <br>
+                Step 1:
+                Place the following ingredients in the blender in this order: eggs, sugar, oil and milk.
+                <br>
+                Step 2:
+                Pour the mixture into a bowl, add the baking powder, then gradually add the flour while stirring.
+                <br>
+                Step 3:
+                Pour the cake mixture into a greased and floured mold.
+                <br>
+                Step 4:
+                We place the cake pan in the oven for approximately 40 minutes at medium heat, i.e. 180 degrees. Good health .
+
+            </div>
+        </section>
+
+        <section id="soup" class="recipe">
+            <img src="img 7 .jpeg" alt="Soup Image">
+            <img src="img 8 .jpeg" alt="soup">
+            <div class="recipe-content">
+                <h2>Soup Recipes</h2>
+                <p>Here is the description and steps for making soup...</p>
+                the component:
+                <br>
+                 1Medium sized potatoes, cut into cubes
+                 <br>
+                1Zucchini, medium size, cut into cubes
+                <br>
+                1Carrots, cut into cubes
+                <br>
+                50 grLow-fat cheddar cheese
+                <br>
+                A little parsley
+                <br>
+                Salt and black pepper to taste
+                <br>
+                4 cupswater
+                <hr>
+                the steps :
+                k Step 1
+                In a pot on the fire, place the chopped potatoes, zucchini and carrots, add salt and black pepper, and add water for 20 minutes.
+                <br>
+                Step 2
+                Remove from heat, place in the blender and add the cheese and parsley. Beat the ingredients in the blender until combined, then return them to the pot and place on low heat for 3 minutes.
+                <br>
+                Step 3
+                Pour into a soup bowl and good luck.
+
+            </div>
+        </section>
+        
+    </main>
+
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <button class="dark-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
+
+    <footer>
+        <p>&copy; 2023 Recipe Book</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
